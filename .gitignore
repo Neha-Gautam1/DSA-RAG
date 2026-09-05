@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+data/videos/
+data/transcripts/
+data/chunks/
+data/metadata/
+# data/qdrant_db/ is intentionally NOT ignored -- it ships with the deployment

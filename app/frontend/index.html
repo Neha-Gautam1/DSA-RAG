@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DSA Revision Tutor</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">DSA Revision Tutor</header>
+
+    <div class="main-layout">
+      <!-- LEFT: Chat -->
+      <section class="chat-pane">
+        <div id="chat-messages" class="chat-messages"></div>
+
+        <form id="chat-form" class="chat-input-row">
+          <input
+            id="chat-input"
+            type="text"
+            placeholder="Poocho... e.g. binary search revise karao"
+            autocomplete="off"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <!-- RIGHT: Video player + related timestamps -->
+      <section class="video-pane">
+        <div id="video-container" class="video-container">
+          <p class="placeholder-text" id="video-placeholder">Video will appear here once you ask a question.</p>
+          <div id="youtube-player"></div>
+        </div>
+
+        <div id="related-container" class="related-container">
+          <!-- Related timestamps injected here in Phase 15 -->
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="/static/player.js"></script>
+  <script src="/static/timestamps.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
